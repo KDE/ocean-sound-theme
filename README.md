@@ -34,7 +34,7 @@ There's also the "Invert" effect in LMMS but I noticed I get more phase cancella
 
 - In post, all sounds got normalized in Audacity using the ReplayGain plugin set at -3dB. I downloaded it here: https://forum.audacityteam.org/download/file.php?id=26216. Here I export them at 96000hz 32-bit .wav and I convert them to 48000hz 16bit later.
 
-Automate cutting and removing silence from sound using this Audacity macro
+## Automate cutting and removing silence from sound using this Audacity macro
 
 Below is the macro I used to automate part of the editing process. It sets the project to the right sample rate, cuts the beginning of each sound (leaving a little bit of silence at the beginning) and then removes silence at the end. To use it, just paste it in a .txt file, save, and import it into the macros window in Audacity. Then, import all tracks and run the macro. Note that I hard-coded the amount of tracks it will select, so, if you make more, change the number in TrackCount="20" to the number of tracks you imported into Audacity.
 
