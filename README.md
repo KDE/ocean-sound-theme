@@ -2,91 +2,48 @@
 
 Blue Ocean Sound Theme for Plasma
 
-## Getting started
+## If anyone wants to make more sounds or modify the existing ones, here's some important observations:
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- I'd love to hear an improved version 2 made by someone in the community, so if you want to do that, follow the instructions below. :D
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- Use the Flatpak version of LMMS to get all plugins working.
 
-## Add your files
+- Most instruments are based on LMMS's presets, but they're (mostly) heavily modified. Getting familiar with ZynAddSubFX is a good starting point.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- This sound theme is meant to sound soft, so if you want to make more sounds based on this, I suggest increasing the attack, release, and adding reverb (but not too much, unless we're talking about the login sound). This will help you keep the whole theme consistent.
 
-```
-cd existing_repo
-git remote add origin https://invent.kde.org/raploz/blue-ocean-sound-theme.git
-git branch -M master
-git push -uf origin master
-```
+- You may notice some tracks are disabled. The reason for that is that at some point I made the sound with the disabled instrument but then changed my mind. I kept them as backup. There's also an unused instrument for the "trash" sound. That instrument didn't fit very well with the rest of the theme, but I chose to leave it there just in case.
 
-## Integrate with your tools
+- As of the date I'm writing this, ZynAddSubFX does not seem to allow per-note stereo mixing. Use automation tracks to control the Pan value instead.
 
-- [ ] [Set up project integrations](https://invent.kde.org/raploz/blue-ocean-sound-theme/-/settings/integrations)
+- You may notice there's always a detuned version of each sound. I did this to make the instruments sound fuller. The "Ultra Detune" in the login sound is a stylistic choice meant to make the sound feel more nostalgic, like a song playing from an old vinyl disc or tape. Have you ever noticed they change in pitch as they age? :P
 
-## Collaborate with your team
+- Pay attention to phase cancellation. You can see when it happens by doing the following after exporting all the sounds into one file (I'm using Audacity 3.1.3):
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+1. Normalize the track to something consistent like -12dB. Effects >> Normalize - Select "Remove DC offset" and "Normalize peak amplitude to". This is not the level you'll want for the final sounds, but you need a baseline loudness level to be able to compare the volume.
+2. Make two copies of the main track so you can compare both (Select, copy, click outside and paste)
+3. Split the stereo channels in one of the tracks (leave the other as a backup). Click on the track name over the Silence and Solo buttons and click on "Split stereo tracks"
+4. Select one of the audio channels and use the "Invert" effect. Effects > Invert
+5. Combine both channels again into one stereo track. Click on the same place as step 3 and select "Make stereo track"
+6. Mix the tracks down to mono (both the inverted and the backup). Go to Tracks >> Mix >> Mix Stereo Down to Mono
+7. Solo your inverted track, play it. Then do the same with the original. Check which version has the highest volume. Pay attention to the dB meter. The version suffering with phase cancellation will have a lower volume, and the spectrometer will also show that difference. You'll also notice some instruments sound muffled or completely disappear in the problematic version.
 
-## Test and Deploy
+There's also the "Invert" effect in LMMS but I noticed I get more phase cancellation problems with it enabled. The current sounds are okay without inverting one of the channels. If you make changes to this project, make sure it's still okay.
 
-Use the built-in continuous integration in GitLab.
+- At least with LMMS 1.2.2, there's a popping sound at the start of every sound when you export them. To work around that, I added some empty space before each sound, that way the popping gets reduced, but it doesn't go away in every case. For some reason, if I re-export a few times the pop goes away. There also have been situations where the pop was only noticed after normalizing the sounds in post, so I had to re-export the sounds and it went away. Keep that in mind and always remember to include the empty space while exporting to avoid the popping sound! You can remove the silence in post.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+- In post, all sounds got normalized in Audacity using the ReplayGain plugin set at -3dB. I downloaded it here: https://forum.audacityteam.org/download/file.php?id=26216. Here I export them at 96000hz 32-bit .wav and I convert them to 48000hz 16bit later.
 
-***
+Automate cutting and removing silence from sound using this Audacity macro
 
-# Editing this README
+Below is the macro I used to automate part of the editing process. It sets the project to the right sample rate, cuts the beginning of each sound (leaving a little bit of silence at the beginning) and then removes silence at the end. To use it, just paste it in a .txt file, save, and import it into the macros window in Audacity. Then, import all tracks and run the macro. Note that I hard-coded the amount of tracks it will select, so, if you make more, change the number in TrackCount="20" to the number of tracks you imported into Audacity.
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+SetProject:Rate="48000"
+Select:End="2" Mode="Set" RelativeTo="ProjectStart" Start="0" Track="0" TrackCount="20"
+Delete:
+SelectAll:
+TruncateSilence:Action="Truncate Detected Silence" Compress="50" Independent="0" Minimum="1" Threshold="-70" Truncate="0"
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Made by Guilherme Marçal Silva <guimarcalsilva@gmail.com>
