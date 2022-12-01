@@ -32,7 +32,10 @@ There's also the "Invert" effect in LMMS but I noticed I get more phase cancella
 
 - At least with LMMS 1.2.2, there's a popping sound at the start of every sound when you export them. To work around that, I added some empty space before each sound, that way the popping gets reduced, but it doesn't go away in every case. For some reason, if I re-export a few times the pop goes away. There also have been situations where the pop was only noticed after normalizing the sounds in post, so I had to re-export the sounds and it went away. Keep that in mind and always remember to include the empty space while exporting to avoid the popping sound! You can remove the silence in post.
 
-- In post, all sounds got normalized in Audacity using the ReplayGain plugin set at -3dB. I downloaded it here: https://forum.audacityteam.org/download/file.php?id=26216. Here I export them at 96000hz 32-bit .wav and I convert them to 48000hz 16bit later.
+- In post, all sounds got normalized in Audacity using the ReplayGain plugin set at -3dB (with the exception of the sound for changing volume. That one had to be normalized to –6dB to avoid clipping). I downloaded the plugin here: https://forum.audacityteam.org/download/file.php?id=26216. In LMMS I export the sounds at 96000hz 32-bit .wav and then I convert them in Audacity to 48000hz 16bit later. You can find instructions about how you can install a Nyquist plugin here: https://manual.audacityteam.org/man/installing_effect_generator_and_analyzer_plug_ins_on_linux.html#nyquist_install
+
+- I also manually edited the ending of a few sounds to make them shorter and remove any unwanted artifacts.
+
 
 ## Automate cutting and removing silence from sound using this Audacity macro
 
