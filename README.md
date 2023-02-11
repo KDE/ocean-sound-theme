@@ -6,45 +6,45 @@ Blue Ocean Sound Theme for Plasma
 
 Each sound is intended to be used in a specific situation:
 
-- Login: Play this sound after the computer boots up and the Plasma session starts
+- **Login**: Play this sound after the computer boots up and the Plasma session starts.
 
-- Log_out: Play when exiting the Plasma session
+- **Log_out**: Play when exiting the Plasma session.
 
-- Log_out_short: Alternative log out sound. May also be used by applications (e.g. Instant messaging apps)
+- **Log_out_short**: Alternative log out sound. May also be used by applications (e.g. Instant messaging apps).
 
-- Volume_change: Feedback sound when changing volume
+- **Volume_change**: Feedback sound when changing volume.
 
-- Update_notification-special: Play when something special happens (e.g. New update available)
+- **Update_notification-special**: Play when something special happens (e.g. New update available).
 
-- Trash: Play after permanently deleting the contents of the trash folder
+- **Trash**: Play after permanently deleting the contents of the trash folder.
 
-- SMS_notification: Play for incoming SMS messages
+- **SMS_notification**: Play for incoming SMS messages.
 
-- Question-warning_dialog: Play when asking the user a question or when the program needs the user attention (e.g. Dialog: Do you want to save? / This action will close 20 tabs)
+- **Question-warning_dialog**: Play when asking the user a question or when the program needs the user attention (e.g. Dialog: Do you want to save? / This action will close 20 tabs).
 
-- Power_plug: Play when plugging in the charger on the laptop or phone
+- **Power_plug**: Play when plugging in the charger on the laptop or phone.
 
-- Power_unplug: Play when unplugging the charger
+- **Power_unplug**: Play when unplugging the charger.
 
-- Plug_device: Play when a new device is inserted (e.g. New external drive, mouse, or bluetooth dongle)
+- **Plug_device**: Play when a new device is inserted (e.g. New external drive, mouse, or bluetooth dongle).
 
-- Unplug_device: Play when disconnecting a device
+- **Unplug_device**: Play when disconnecting a device.
 
-- Generic_plug: Alternative sound used when plugging something. May also be used when enabling devices that are still connected (e.g. touchpad)
+- **Generic_plug**: Alternative sound used when plugging something. May also be used when enabling devices that are still connected (e.g. touchpad).
 
-- Generic_unplug: Alternative sound used when unplugging something. May also be used when disabling devices that are still connected
+- **Generic_unplug**: Alternative sound used when unplugging something. May also be used when disabling devices that are still connected.
 
-- Low_battery: Play when the battery reaches a low level (e.g. 15%)
+- **Low_battery**: Play when the battery reaches a low level (e.g. 15%).
 
-- Critical_battery: Play when the battery charge reaches a very low level and the computer is about to turn off (e.g. 5%)
+- **Critical_battery**: Play when the battery charge reaches a very low level and the computer is about to turn off (e.g. 5%).
 
-- Information_dialog: Play when giving the user some information (e.g. Dialog: You hid the title bar. Press ALT+F3 to enable it again)
+- **Information_dialog**: Play when giving the user some information (e.g. Dialog: You hid the title bar. Press ALT+F3 to enable it again).
 
-- Generic_beep: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings)
+- **Generic_beep**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
 
-- Error: Play when an error occurs (e.g. Could not save file)
+- **Error**: Play when an error occurs (e.g. Could not save file).
 
-- Error_serious: Play when an unrecoverable error happens (e.g. The program has crashed)
+- **Error_serious**: Play when an unrecoverable error happens (e.g. The program has crashed).
 
 If you need a sound which is not provided by this pack, try to use Oxygen sounds as a fallback (e.g. minimize window sounds).
 
