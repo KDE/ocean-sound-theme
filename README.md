@@ -30,9 +30,9 @@ Each sound is intended to be used in a specific situation:
 
 - **Unplug_device**: Play when disconnecting a device.
 
-- **Generic_plug**: Alternative sound used when plugging something. May also be used when enabling devices that are still connected (e.g. touchpad).
+- **Generic_plug**: Alternative sound used when plugging something. May also be used when enabling devices that are already connected (e.g. touchpad).
 
-- **Generic_unplug**: Alternative sound used when unplugging something. May also be used when disabling devices that are still connected.
+- **Generic_unplug**: Alternative sound used when unplugging something. May also be used when disabling devices that are already connected.
 
 - **Low_battery**: Play when the battery reaches a low level (e.g. 15%).
 
@@ -58,30 +58,31 @@ If you need a sound which is not provided by this pack, try to use Oxygen sounds
 
 - This sound theme is meant to sound soft, so if you want to make more sounds based on this, I suggest increasing the attack, release, and adding reverb (but not too much, unless we're talking about the login sound). This will help you keep the whole theme consistent.
 
+- This sound theme is NOT meant to be modern or minimalistic. Plasma itself is not minimalistic, so it wouldn't make sense to make a minimalistic sound theme. My inspirations were KDE 3 and Windows Vista sounds.
+
 - You may notice some tracks are disabled. The reason for that is that at some point I made the sound with the disabled instrument but then changed my mind. I kept them as backup. There's also an unused instrument for the "trash" sound. That instrument didn't fit very well with the rest of the theme, but I chose to leave it there just in case.
 
 - As of the date I'm writing this, ZynAddSubFX does not seem to allow per-note stereo mixing. Use automation tracks to control the Pan value instead.
 
-- You may notice there's always a detuned version of each sound. I did this to make the instruments sound fuller. The "Ultra Detune" in the login sound is a stylistic choice meant to make the sound feel more nostalgic, like a song playing from an old vinyl disc or tape. Have you ever noticed they change in pitch as they age? :P
+- You may notice there's always a detuned version of each sound. I did this to make the instruments sound fuller. The "Ultra Detune" in the login sound is a stylistic choice meant to make the sound feel more nostalgic, like a song playing from an old vinyl disc. Have you ever noticed the pitch changes as the disc wobbles and the speed slows down? :P
 
-- Pay attention to phase cancellation. You can see when it happens by doing the following after exporting all the sounds into one file (I'm using Audacity 3.1.3):
+- Pay attention to phase cancellation and always test the sounds in a mono speaker. The current sounds are totally fine in that regard. If you make changes to this project, make sure it's still okay. If you make new sounds and you wanna make sure there's no phasing problems, you can do the following test after exporting all the sounds into one file (I'm using Audacity 3.1.3):
 
 1. Normalize the track to something consistent like -12dB. Effects >> Normalize - Select "Remove DC offset" and "Normalize peak amplitude to". This is not the level you'll want for the final sounds, but you need a baseline loudness level to be able to compare the volume.
 2. Make two copies of the main track so you can compare both (Select, copy, click outside and paste)
-3. Split the stereo channels in one of the tracks (leave the other as a backup). Click on the track name over the Silence and Solo buttons and click on "Split stereo tracks"
+3. Split the stereo channels in one of the tracks (leave the other as a backup). Click on the track name over the "Silence" and "Solo" buttons and click on "Split stereo track" (**DO NOT** select "Split Stereo to Mono", that will make two identical tracks and when you combine them again you WILL get phase cancelation and lose the stereo panning, always use "Split stereo track")
 4. Select one of the audio channels and use the "Invert" effect. Effects > Invert
-5. Combine both channels again into one stereo track. Click on the same place as step 3 and select "Make stereo track"
+5. Combine both channels again into one stereo track by clicking on the same place as step 3 and selecting "Make stereo track"
 6. Mix the tracks down to mono (both the inverted and the backup). Go to Tracks >> Mix >> Mix Stereo Down to Mono
 7. Solo your inverted track, play it. Then do the same with the original. Check which version has the highest volume. Pay attention to the dB meter. The version suffering with phase cancellation will have a lower volume, and the spectrometer will also show that difference. You'll also notice some instruments sound muffled or completely disappear in the problematic version.
 
-There's also the "Invert" effect in LMMS but I noticed I get more phase cancellation problems with it enabled. The current sounds are okay without inverting one of the channels. If you make changes to this project, make sure it's still okay.
+There's also the "Invert" effect in LMMS but I noticed I get more phase cancellation problems with it enabled. 
 
-- At least with LMMS 1.2.2, there's a popping sound at the start of every sound when you export them. To work around that, I added some empty space before each sound, that way the popping gets reduced, but it doesn't go away in every case. For some reason, if I re-export a few times the pop goes away. There also have been situations where the pop was only noticed after normalizing the sounds in post, so I had to re-export the sounds and it went away. Keep that in mind and always remember to include the empty space while exporting to avoid the popping sound! You can remove the silence in post.
+- The LMMS export process seems to be non-deterministic, which means that every time you export a sound it can create a slightly different waveform. I noticed sometimes one side of the stereo track is slightly more silent, or sometimes I get a popping noise. At least with LMMS 1.2.2, there's a popping sound at the start of every sound when you export them. To work around that, I added some empty space before each sound, that way the popping gets reduced, but it doesn't go away in every case. If I re-export a few times the pop can go away. There also have been situations where the popping was only noticed after normalizing the sounds in post, so I had to re-export the sounds again (!!!). Keep that in mind and always remember to include the empty space while exporting to avoid the popping sound! You can remove the silence in post. Also remember to check the levels of each channel and, if the volume is too different between them, you can re-export or use the Loudness Normalization plugin in Audacity to normalize each channel independently.
 
 - In post, all sounds got normalized in Audacity using the ReplayGain plugin set at -3dB. I downloaded the plugin here: https://forum.audacityteam.org/download/file.php?id=26216. In LMMS I export the sounds at 96000hz 32-bit .wav and then I convert them in Audacity to 48000hz 16bit later. You can find instructions about how you can install a Nyquist plugin here: https://manual.audacityteam.org/man/installing_effect_generator_and_analyzer_plug_ins_on_linux.html#nyquist_install
 
-- I also manually edited the ending of a few sounds to make them shorter and remove any unwanted artifacts.
-
+- I also manually edited the ending of a few sounds to make them shorter and remove any unwanted artifacts, like noise.
 
 ## Automate cutting and removing silence from sound using this Audacity macro
 
