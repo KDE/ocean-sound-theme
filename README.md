@@ -2,6 +2,12 @@
 
 Blue Ocean Sound Theme for Plasma
 
+## Folders
+
+- **Blue Ocean Sound Theme**: Contains the final sounds that will be used in the sound theme.
+- **Unedited Sounds - Backup**: Contains the sounds before they were edited. It's meant as a backup if someone needs to adjust something and won't be included in the final theme.
+- **Project Files**: Contains multiple versions of the LMMS project file and it also contains the Audacity macro used for trimming the sounds. Versions of the project with the _OLD suffix are earlier revisions and are kept for backup purposes only.
+
 ## Intended usage
 
 Each sound is intended to be used in a specific situation:
@@ -29,10 +35,6 @@ Each sound is intended to be used in a specific situation:
 - **Plug_device**: Play when a new device is inserted (e.g. New external drive, mouse, or bluetooth dongle).
 
 - **Unplug_device**: Play when disconnecting a device.
-
-- **Generic_plug**: Alternative sound used when plugging something. May also be used when enabling devices that are already connected (e.g. touchpad).
-
-- **Generic_unplug**: Alternative sound used when unplugging something. May also be used when disabling devices that are already connected.
 
 - **Low_battery**: Play when the battery reaches a low level (e.g. 15%).
 
