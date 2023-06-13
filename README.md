@@ -44,6 +44,10 @@ Each sound is intended to be used in a specific situation:
 
 - **Generic_beep**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
 
+- **Generic_positive**: Used for positive/turn on/enable actions throughout KDE Plasma. Prefer using the specific sounds for un/plugging devices and power over this one.
+
+- **Generic_negative**: Used for negative/turn off/disable actions throughout KDE Plasma. Prefer using the specific sounds for un/plugging devices and power over this one.
+
 - **Error**: Play when an error occurs (e.g. Could not save file).
 
 - **Error_serious**: Play when an unrecoverable error happens (e.g. The program has crashed).
