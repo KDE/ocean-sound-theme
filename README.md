@@ -7,50 +7,61 @@ Blue Ocean Sound Theme for Plasma
 - **Blue Ocean Sound Theme**: Contains the final sounds that will be used in the sound theme.
 - **Unedited Sounds - Backup**: Contains the sounds before they were edited. It's meant as a backup if someone needs to adjust something and won't be included in the final theme.
 - **Project Files**: Contains multiple versions of the LMMS project file and it also contains the Audacity macro used for trimming the sounds. Versions of the project with the _OLD suffix are earlier revisions and are kept for backup purposes only.
+- **LICENSES**: Contains the terms of all of the licenses on this repository
 
 ## Intended usage
 
 Each sound is intended to be used in a specific situation:
 
-- **Login**: Play this sound after the computer boots up and the Plasma session starts.
+- **desktop-login**: Play this sound after the computer boots up and the Plasma session starts.
 
-- **Log_out**: Play when exiting the Plasma session.
+- **desktop-logout**: Play when exiting the Plasma session.
 
-- **Log_out_short**: Alternative log out sound. May also be used by applications (e.g. Instant messaging apps).
+- **service-logout**: Play when logging out of application. (e.g. Instant Messaging app).
 
-- **Volume_change**: Feedback sound when changing volume.
+- **audio-volume-change**: Feedback sound when changing volume.
 
-- **Update_notification-special**: Play when something special happens (e.g. New update available).
+- **dialog-warning**: Play when warning the user about something (e.g. "You have unsaved changes" dialog).
 
-- **Trash**: Play after permanently deleting the contents of the trash folder.
+- **trash-empty**: Play after permanently deleting the contents of the trash folder.
 
-- **SMS_notification**: Play for incoming SMS messages.
+- **message-new-sms**: Play for incoming SMS messages.
 
-- **Question-warning_dialog**: Play when asking the user a question or when the program needs the user attention (e.g. Dialog: Do you want to save? / This action will close 20 tabs).
+- **dialog-question**: Play when asking the user a question (e.g. Dialog: Do you want to save?).
 
-- **Power_plug**: Play when plugging in the charger on the laptop or phone.
+- **power-plug**: Play when plugging in the charger on the laptop or phone.
 
-- **Power_unplug**: Play when unplugging the charger.
+- **power-unplug**: Play when unplugging the charger.
 
-- **Plug_device**: Play when a new device is inserted (e.g. New external drive, mouse, or bluetooth dongle).
+- **device-added**: Play when a new device is inserted (e.g. New external drive, mouse, or bluetooth dongle).
 
-- **Unplug_device**: Play when disconnecting a device.
+- **device-removed**: Play when disconnecting a device.
 
-- **Low_battery**: Play when the battery reaches a low level (e.g. 15%).
+- **battery-caution**: Play when the battery reaches a low level (e.g. 15%).
 
-- **Critical_battery**: Play when the battery charge reaches a very low level and the computer is about to turn off (e.g. 5%).
+- **battery-low**: Play when the battery charge reaches a very low level and the computer is about to turn off (e.g. 5%).
 
-- **Information_dialog**: Play when giving the user some information (e.g. Dialog: You hid the title bar. Press ALT+F3 to enable it again).
+- **dialog-information**: Play when giving the user some information (e.g. Dialog: You hid the title bar. Press ALT+F3 to enable it again).
 
-- **Generic_beep**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
+- **bell-window-system**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
 
-- **Generic_positive**: Used for positive/turn on/enable actions throughout KDE Plasma. Prefer using the specific sounds for un/plugging devices and power over this one.
+- **action-positive**: Used for generic positive/turn on/enable actions throughout KDE Plasma.
 
-- **Generic_negative**: Used for negative/turn off/disable actions throughout KDE Plasma. Prefer using the specific sounds for un/plugging devices and power over this one.
+- **action-negative**: Used for generic negative/turn off/disable actions throughout KDE Plasma.
 
-- **Error**: Play when an error occurs (e.g. Could not save file).
+- **dialog-error**: Play when an error occurs (e.g. Could not save file).
 
-- **Error_serious**: Play when an unrecoverable error happens (e.g. The program has crashed).
+- **dialog-error-serious**: Play when an unrecoverable error happens (e.g. The program has crashed).
+
+- **completion-partial**: Play when text autocompletion only completes some words
+
+- **completion-success**: Play when text autocompletion completes all words
+
+- **completion-fail**: Play when text autocompletion fails to complete any words
+
+- **completion-rotation**: Play when text autocompletion reaches the end of the page and starts from the top again
+
+- **phone-incoming-call**: Play when receiving calls
 
 If you need a sound which is not provided by this pack, try to use Oxygen sounds as a fallback (e.g. minimize window sounds).
 
