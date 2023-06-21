@@ -25,7 +25,7 @@ Each sound is intended to be used in a specific situation:
 
 - **trash-empty**: Play after permanently deleting the contents of the trash folder.
 
-- **message-new-sms**: Play for incoming SMS messages.
+- **message-new**: Play for incoming messages.
 
 - **dialog-question**: Play when asking the user a question (e.g. Dialog: Do you want to save?).
 
