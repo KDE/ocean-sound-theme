@@ -83,7 +83,7 @@ If you need a sound which is not provided by this pack, try to use Oxygen sounds
 
 - You may notice there's always a detuned version of each sound. I did this to make the instruments sound fuller. The "Ultra Detune" in the login sound is a stylistic choice meant to make the sound feel more nostalgic, like a song playing from an old vinyl disc. Have you ever noticed the pitch changes as the disc wobbles and the speed slows down? :P
 
-- Pay attention to phase cancellation and always test the sounds in a mono speaker. The current sounds are totally fine in that regard. If you make changes to this project, make sure it's still okay. If you make new sounds and you wanna make sure there's no phasing problems, you can do the following test after exporting all the sounds into one file (I'm using Audacity 3.1.3):
+- Pay attention to phase cancellation and always test the sounds in a mono speaker. Most sounds (but not all, like a couple of the "completion" sounds) are totally fine in that regard. If you make changes to this project, make sure it's still okay. If you make new sounds and you wanna make sure there's no phasing problems, you can do the following test after exporting all the sounds into one file (I'm using Audacity 3.1.3):
 
 1. Normalize the track to something consistent like -12dB. Effects >> Normalize - Select "Remove DC offset" and "Normalize peak amplitude to". This is not the level you'll want for the final sounds, but you need a baseline loudness level to be able to compare the volume.
 2. Make two copies of the main track so you can compare both (Select, copy, click outside and paste)

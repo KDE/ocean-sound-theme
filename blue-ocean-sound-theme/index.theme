@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=Blue Ocean
+Comment="Blue Ocean Sound Theme for KDE Plasma"
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
