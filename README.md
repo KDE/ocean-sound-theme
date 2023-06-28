@@ -45,9 +45,9 @@ Each sound is intended to be used in a specific situation:
 
 - **bell-window-system**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
 
-- **action-positive**: Used for generic positive/turn on/enable actions throughout KDE Plasma.
+- **outcome-success**: Used for actions with a successful outcome.
 
-- **action-negative**: Used for generic negative/turn off/disable actions throughout KDE Plasma.
+- **outcome-failure**: Used for actions that fail (Unlike errors, this is more generic. E.g. Can be used in a game).
 
 - **dialog-error**: Play when an error occurs (e.g. Could not save file).
 
