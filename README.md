@@ -4,9 +4,9 @@ Blue Ocean Sound Theme for Plasma
 
 ## Folders
 
-- **Blue Ocean Sound Theme**: Contains the final sounds that will be used in the sound theme.
+- **blue-ocean-sound-theme**: Contains the final sounds that will be used in the sound theme.
 - **Unedited Sounds - Backup**: Contains the sounds before they were edited. It's meant as a backup if someone needs to adjust something and won't be included in the final theme.
-- **Project Files**: Contains multiple versions of the LMMS project file and it also contains the Audacity macro used for trimming the sounds. Versions of the project with the _OLD suffix are earlier revisions and are kept for backup purposes only.
+- **Project Files**: Contains the LMMS project file and the Audacity macro used for trimming the sounds.
 - **LICENSES**: Contains the terms of all of the licenses on this repository
 
 ## Intended usage
