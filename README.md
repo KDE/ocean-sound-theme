@@ -66,6 +66,8 @@ If you need a sound which is not provided by this pack, try to use Oxygen sounds
 
 ## If anyone wants to make more sounds or modify the existing ones, here's some important observations:
 
+- All sounds must adhere to the sound naming spec: https://specifications.freedesktop.org/sound-naming-spec/sound-naming-spec-latest.html
+
 - I'd love to hear an improved version 2 made by someone in the community, so if you want to do that, follow the instructions below. :D
 
 - Use the Flatpak version of LMMS to get all plugins working.
