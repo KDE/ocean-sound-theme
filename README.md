@@ -12,9 +12,13 @@ Blue Ocean Sound Theme for Plasma
 
 Each sound is intended to be used in a specific situation:
 
+- **theme-demo**: A preview of the sound theme.
+
 - **desktop-login**: Play this sound after the computer boots up and the Plasma session starts.
 
 - **desktop-logout**: Play when exiting the Plasma session.
+
+- **service-login**: Play when logging into an application. (e.g. Instant Messaging app).
 
 - **service-logout**: Play when logging out of application. (e.g. Instant Messaging app).
 
