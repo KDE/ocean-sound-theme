@@ -117,7 +117,3 @@ Select:End="2" Mode="Set" RelativeTo="ProjectStart" Start="0" Track="0" TrackCou
 Delete:
 SelectAll:
 TruncateSilence:Action="Truncate Detected Silence" Compress="50" Independent="0" Minimum="1" Threshold="-70" Truncate="0"
-
-## License
-
-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License. Made by Guilherme Marçal Silva <guimarcalsilva@gmail.com>
