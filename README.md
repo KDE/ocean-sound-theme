@@ -44,6 +44,8 @@ Each sound is intended to be used in a specific situation:
 
 - **battery-low**: Play when the battery charge reaches a very low level and the computer is about to turn off (e.g. 5%).
 
+- **battery-full**: Play when the battery charge reaches 100%.
+
 - **dialog-information**: Play when giving the user some information (e.g. Dialog: You hid the title bar. Press ALT+F3 to enable it again).
 
 - **bell-window-system**: Use when you need the computer to beep for some reason (e.g. When Audible bell is enabled in the accessibility settings).
