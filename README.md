@@ -28,7 +28,7 @@ Each sound is intended to be used in a specific situation:
 
 - **trash-empty**: Play after permanently deleting the contents of the trash folder.
 
-- **message-new**: Play for incoming messages.
+- **message-new-instant**: Play for incoming messages.
 
 - **dialog-question**: Play when asking the user a question (e.g. Dialog: Do you want to save?).
 
@@ -54,7 +54,7 @@ Each sound is intended to be used in a specific situation:
 
 - **dialog-error**: Play when an error occurs (e.g. Could not save file).
 
-- **dialog-error-serious**: Play when an unrecoverable error happens (e.g. The program has crashed).
+- **dialog-error-serious** and **dialog-error-critical**: Play when an unrecoverable error happens (e.g. The program has crashed).
 
 - **completion-partial**: Play when text autocompletion only completes some words
 
