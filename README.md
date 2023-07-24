@@ -4,7 +4,7 @@ Blue Ocean Sound Theme for Plasma
 
 ## Folders
 
-- **blue-ocean-sound-theme**: Contains the sounds that are used in the sound theme.
+- **blue-ocean**: Contains the sounds that are used in the sound theme.
 - **Project Files**: Contains the LMMS project file and the Audacity macro used for trimming the sounds.
 - **LICENSES**: Contains the terms of all of the licenses on this repository.
 
@@ -102,7 +102,7 @@ If you need a sound which is not provided by this pack, try to use Oxygen sounds
 6. Mix the tracks down to mono (both the inverted and the backup). Go to Tracks >> Mix >> Mix Stereo Down to Mono
 7. Solo your inverted track, play it. Then do the same with the original. Check which version has the highest volume. Pay attention to the dB meter. The version suffering with phase cancellation will have a lower volume, and the spectrometer will also show that difference. You'll also notice some instruments sound muffled or completely disappear in the problematic version.
 
-There's also the "Invert" effect in LMMS but I noticed I get more phase cancellation problems with it enabled. 
+There's also the "Invert" effect in LMMS but I noticed I get more phase cancellation problems with it enabled.
 
 - The LMMS export process seems to be non-deterministic, which means that every time you export a sound it can create a slightly different waveform. I noticed sometimes one side of the stereo track is slightly more silent, or sometimes I get a popping noise. At least with LMMS 1.2.2, there's a popping sound at the start of every sound when you export them. To work around that, I added some empty space before each sound, that way the popping gets reduced, but it doesn't go away in every case. If I re-export a few times the pop can go away. There also have been situations where the popping was only noticed after normalizing the sounds in post, so I had to re-export the sounds again (!!!). Keep that in mind and always remember to include the empty space while exporting to avoid the popping sound! You can remove the silence in post. Also remember to check the levels of each channel and, if the volume is too different between them, you can re-export or use the Loudness Normalization plugin in Audacity to normalize each channel independently.
 
