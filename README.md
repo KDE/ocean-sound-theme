@@ -70,6 +70,24 @@ Each sound is intended to be used in a specific situation:
 
 - **alarm-clock-elapsed**: Play for alarms (e.g. timer or alarm clock)
 
+- **complete-media-burn**: Play when optical media completes burning
+
+- **complete-media-error**: Play when optical media burning proccess is unsuccessful
+
+- **media-insert-request**: Play when requesting the user to insert media
+
+- **game-over-winner**: Play when the user wins in a game
+
+- **message-contact-in**: Play when someone in a instant messaging app logs in
+
+- **message-contact-out**:Play when someone in a instant messaging app logs out
+
+- **message-sent-instant**: Play when sending a message in an instant messaging
+
+- **message-highlight**: Play for a message in an instant messaging that is important
+
+- **message-attention**: Play for a message in an instant messaging that needs attention
+
 If you need a sound which is not provided by this pack, try to use Oxygen sounds as a fallback (e.g. minimize window sounds).
 
 ## If anyone wants to make more sounds or modify the existing ones, here's some important observations:
