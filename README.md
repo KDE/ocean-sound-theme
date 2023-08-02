@@ -80,7 +80,7 @@ Each sound is intended to be used in a specific situation:
 
 - **message-contact-in**: Play when someone in a instant messaging app logs in
 
-- **message-contact-out**:Play when someone in a instant messaging app logs out
+- **message-contact-out**: Play when someone in a instant messaging app logs out
 
 - **message-sent-instant**: Play when sending a message in an instant messaging app
 
