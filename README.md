@@ -76,7 +76,9 @@ Each sound is intended to be used in a specific situation:
 
 - **media-insert-request**: Play when requesting the user to insert media
 
-- **game-over-winner**: Play when the user wins in a game
+- **game-over-winner**: Play when the player wins in a game
+
+- **game-over-loser**: Play when the player loses in a game
 
 - **message-contact-in**: Play when someone in a instant messaging app logs in
 
