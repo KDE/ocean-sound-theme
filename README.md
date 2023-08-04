@@ -1,10 +1,10 @@
-# Blue Ocean Sound Theme
+# Ocean Sound Theme
 
-Blue Ocean Sound Theme for Plasma
+Ocean Sound Theme for Plasma
 
 ## Folders
 
-- **blue-ocean**: Contains the sounds that are used in the sound theme.
+- **ocean**: Contains the sounds that are used in the sound theme.
 - **Project Files**: Contains the LMMS project file and the Audacity macro used for trimming the sounds.
 - **LICENSES**: Contains the terms of all of the licenses on this repository.
 

@@ -4,7 +4,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-project(blue-ocean-sound-theme)
+project(ocean-sound-theme)
 set(PROJECT_VERSION "5.27.80")
 
 include(FeatureSummary)
@@ -17,6 +17,6 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 include(KDEInstallDirs)
 include(KDECMakeSettings)
 
-install(DIRECTORY "blue-ocean" DESTINATION ${KDE_INSTALL_SOUNDDIR})
+install(DIRECTORY "ocean" DESTINATION ${KDE_INSTALL_SOUNDDIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)

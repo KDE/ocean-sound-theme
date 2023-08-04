@@ -1,0 +1,8 @@
+[Sound Theme]
+Name=Ocean
+Comment=Ocean Sound Theme for KDE Plasma
+Directories=stereo
+Example=theme-demo
+
+[stereo]
+OutputProfile=stereo
