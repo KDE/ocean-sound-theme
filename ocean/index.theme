@@ -16,6 +16,7 @@ Name[sl]=Ocean
 Name[tr]=Okyanus
 Name[uk]=Океан
 Name[x-test]=xxOceanxx
+Name[zh_CN]=Ocean 海洋
 Comment=Ocean Sound Theme for KDE Plasma
 Comment[ast]=Estilu de soníos Ocean pa KDE Plasma
 Comment[ca]=Tema de so Ocean per al Plasma de KDE
@@ -33,6 +34,7 @@ Comment[sl]=Zvočna tema Ocean za KDE Plasma
 Comment[tr]=KDE Plasma için Okyanus Ses Teması
 Comment[uk]=Звукова тема «Океан» для Плазми KDE
 Comment[x-test]=xxOcean Sound Theme for KDE Plasmaxx
+Comment[zh_CN]=KDE Plasma 的 Ocean 海洋声音主题
 Directories=stereo
 Example=theme-demo
 
