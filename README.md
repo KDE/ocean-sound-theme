@@ -90,6 +90,10 @@ Each sound is intended to be used in a specific situation:
 
 - **message-attention**: Play for a message in an instant messaging app that needs attention
 
+- **button-pressed**: Play when a normal key is pressed on a virtual keyboard
+
+- **button-pressed-modifier**: Play when a modifier key is pressed on a virtual keyboard
+
 If you need a sound which is not provided by this pack, try to use Oxygen sounds as a fallback (e.g. minimize window sounds).
 
 ## If anyone wants to make more sounds or modify the existing ones, here's some important observations:
