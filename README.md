@@ -26,6 +26,8 @@ Each sound is intended to be used in a specific situation:
 
 - **dialog-warning**: Play when warning the user about something (e.g. "You have unsaved changes" dialog).
 
+- **dialog-warning-auth**: Play when prompting the user for the administrator password.
+
 - **trash-empty**: Play after permanently deleting the contents of the trash folder.
 
 - **message-new-instant**: Play for incoming messages.
