@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(ocean-sound-theme)
-set(PROJECT_VERSION "6.3.90")
+set(PROJECT_VERSION "6.3.91")
 
 include(FeatureSummary)
 
