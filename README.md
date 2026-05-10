@@ -30,7 +30,9 @@ Each sound is intended to be used in a specific situation:
 
 - **trash-empty**: Play after permanently deleting the contents of the trash folder.
 
-- **message-new-instant**: Play for incoming messages.
+- **message-new-instant**: Play for incoming instant messages.
+
+- **message-new-email**: Play for incoming email.
 
 - **dialog-question**: Play when asking the user a question (e.g. Dialog: Do you want to save?).
 
