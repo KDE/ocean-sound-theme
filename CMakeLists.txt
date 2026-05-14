@@ -9,7 +9,7 @@ set(PROJECT_VERSION "6.6.80")
 
 include(FeatureSummary)
 
-set(KF6_MIN_VERSION "6.22.0")
+set(KF6_MIN_VERSION "6.24.0")
 
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
